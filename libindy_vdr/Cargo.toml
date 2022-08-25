@@ -18,10 +18,9 @@ crate-type = ["staticlib", "rlib", "cdylib"]
 [features]
 ffi = ["ffi-support", "logger"]
 logger = ["env_logger", "log"]
-zmq_vendored = ["zmq/vendored"]
 local_nodes_pool = []
 rich_schema = ["indy-data-types/rich_schema"]
-default = ["ffi", "log", "zmq_vendored"]
+default = ["ffi", "log"]
 
 [dependencies]
 env_logger = { version = "0.7", optional = true }
